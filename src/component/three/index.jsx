@@ -4,8 +4,7 @@ import { useEffect, useRef } from "react";
 import { angleToRadians } from "../../utils/angle";
 import * as THREE from "three";
 
-
-import ParcelModel from "./parcel";
+import ParcelCompact from "./parcel_compact";
 
 export default function Three() {
 
@@ -32,7 +31,8 @@ export default function Three() {
 
             {/* Car */}
             {/* <CityDAO /> */}
-            <ParcelModel />
+           
+            <ParcelCompact />
 
             {/* Floor */}
             {/* <mesh rotation={[-(angleToRadians(90)), 0, 0]} receiveShadow>
